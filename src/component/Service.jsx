@@ -29,6 +29,7 @@ function service() {
                         <div className="col-sm-12 text-center">
                             <div className="head_title">
                                 <h3 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100">What I Offer</h3>
+                                <h3 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100">What I Offer2</h3>
                             </div>
                         </div>
                     </div>
