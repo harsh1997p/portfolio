@@ -1,0 +1,300 @@
+@media only screen and (max-width:767px) {
+    html {
+        overflow-x: hidden;
+    }
+    .banner_wrap .shape2,
+    .banner_wrap .shape3,
+    .banner_wrap .shape4,
+    .banner_wrap .shape5,
+    .experience_wrap .shape1,
+    .banner_wrap .shape6,
+    .skill_wrap .shape1 {
+        display: none;
+    }
+
+    .banner_wrap .main_head h1 {
+        font-size: 42px;
+    }
+
+    .banner_wrap{
+        overflow-x: hidden;
+    }
+    .banner_wrap .shape1 {
+        width: 390px;
+        height: 390px;
+
+    }
+
+    .head_title h3 {
+        font-size: 40px;
+    }
+
+    .banner_info h2 {
+        font-size: 40px;
+    }
+
+    .service_box {
+        margin-bottom: 20px;
+    }
+
+    .experience_box {
+        padding: 15px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .workbox {
+        display: block;
+    }
+    .workbox .left h3 {
+        font-size: 22px;
+    }
+    .workbox .right h3 {
+        font-size: 16px;
+    }
+    .workbox .left h4 {
+        font-size: 16px;
+    }
+    .project_box h4 {
+        font-size: 24px;
+    }
+    .contact_box {
+        padding: 15px;
+    }
+    .banner_img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .banner_wrap {
+        padding-top: 100px;
+    }
+
+    .pb-80 {
+        padding-bottom: 50px;
+    }
+
+    .pt-80 {
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+
+
+    .navbar-collapse {
+        background: #8514FE;
+        padding: 15px;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        color: #fff;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+    }
+
+    .navbar-toggler i {
+        color: #fff;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 991px) {}
+
+
+@media (min-width: 992px)and (max-width: 1024px) {}
+
+
+
+
+@media (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+    .banner_wrap .shape2,
+    .banner_wrap .shape3,
+    .banner_wrap .shape4,
+    .banner_wrap .shape5,
+    .experience_wrap .shape1 {
+        display: none;
+    }
+
+    .head_title h3 {
+        font-size: 40px;
+    }
+
+    .service_box {
+        margin-bottom: 15px;
+    }
+
+    .workbox .right h3 {
+        font-size: 20px;
+    }
+
+    .workbox .left h3 {
+        font-size: 24px;
+    }
+
+    .workbox .left h4 {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .project_img {
+        height: 220px;
+    }
+
+    .project_box h4 {
+        font-size: 22px;
+    }
+
+    .project_box .tags span {
+        font-size: 14px;
+        color: #fff;
+        padding: 4px 11px;
+
+    }
+
+    .skillbox h4 {
+        font-size: 18px;
+    }
+
+    .banner_wrap .main_head h1 {
+        font-size: 70px;
+    }
+
+    .banner_img {
+        width: 290px;
+        height: 290px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner_info h2 {
+        font-size: 40px;
+    }
+
+    .title h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .pb-80 {
+        padding-bottom: 50px;
+    }
+
+    .pt-80 {
+        padding-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1200px) {}
+
+@media only screen and (min-width:1200px) and (max-width:1480px) {}
+
+@media (min-width: 901px)and (max-width: 980px) {}
+
+@media (max-width:992px) {}
+
+@media (max-width:375px) {}
+
+@media (max-width:374px) {}
+
+@media (min-width:376px) and (max-width:480px) {}
+
+@media (min-width:590px) {}
+
+@media only screen and (min-width:1199px) and (max-width:1320px) {}
+
+@media only screen and (min-width:1200px) and (max-width:1280px) {}
+
+@media (max-width:1366px) {
+  
+}
+
+@media (max-width:1600px) {}
+
+
+@media (min-width:1400px) {
+   
+}
+@media (max-width:1600px) and (min-width:1300px) {}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+@media only screen and (max-device-width: 320px) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+@media (min-width: 1200px) {}
