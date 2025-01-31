@@ -1,4 +1,35 @@
+import React, { useState } from "react";
+import axios from "axios";
+
 function Contact() {
+
+    const [formData, setFormData] = useState({
+        fname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        try {
+          const scriptURL = "https://script.google.com/macros/s/AKfycbyp0shunrgpv_ujTzAN0h2MwGbCzNroSoh5-PXVyC7B95MiiaRRUYcRu2bpnrmKouj2/exec"; // Replace with your Web App URL
+          await axios.post(scriptURL, formData);
+          alert("Form submitted successfully!");
+          setFormData({ fname: "", lname: "", email: "", phone: "", message: "" }); // Reset form
+        } catch (error) {
+          console.error("Error submitting form", error);
+          alert("Error submitting form");
+        }
+      };
+
+
     const social = [
         {
             id:1,
@@ -44,7 +75,7 @@ function Contact() {
                             </div>
 
                             <div className="col-sm-6">
-                                <form action="">
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <div className="form-group">
