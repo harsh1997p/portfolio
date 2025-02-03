@@ -10,6 +10,8 @@ function Contact() {
         phone: "",
         message: ""
       });
+
+      
     
       const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,14 +20,25 @@ function Contact() {
       const handleSubmit = async (e) => {
         e.preventDefault();
         
+        const formData = {
+          fname: document.getElementById("fname").value,
+          lname: document.getElementById("lname").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          message: document.getElementById("exampleFormControlTextarea1").value
+        };
+      
         try {
-          const scriptURL = "https://script.google.com/macros/s/AKfycbyp0shunrgpv_ujTzAN0h2MwGbCzNroSoh5-PXVyC7B95MiiaRRUYcRu2bpnrmKouj2/exec"; // Replace with your Web App URL
-          await axios.post(scriptURL, formData);
+          const scriptURL = "https://script.google.com/macros/s/AKfycbycHcFGb-sTcHXgkZFROtxUZkWiPMWiGKYH5xphW5ISiORoREmC0NflP_UTywGtPzhe/exec"; // Replace with your Apps Script URL
+          await axios.post(scriptURL, formData, {
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
           alert("Form submitted successfully!");
-          setFormData({ fname: "", lname: "", email: "", phone: "", message: "" }); // Reset form
         } catch (error) {
-          console.error("Error submitting form", error);
-          alert("Error submitting form");
+          console.error("Error submitting form:", error);
+          alert("Network error. Check console for details.");
         }
       };
 
@@ -55,7 +68,7 @@ function Contact() {
                             <div className="col-sm-6">
                                 <div className="head_title">
                                     <h3 className="mb-2">Let’s Talk About
-                                        Your Projects!</h3>
+                                        Your Projects! 123</h3>
 
 
                                 </div>
