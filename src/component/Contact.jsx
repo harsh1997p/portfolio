@@ -68,7 +68,7 @@ function Contact() {
                             <div className="col-sm-6">
                                 <div className="head_title">
                                     <h3 className="mb-2">Let’s Talk About
-                                        Your Projects! 123</h3>
+                                        Your Projects!</h3>
 
 
                                 </div>
