@@ -69,11 +69,12 @@ section{
 .title h2 {
 	color: #fff;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: "DM Sans", sans-serif;
 	background: -webkit-linear-gradient(#fff, #696969);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	/* -webkit-text-fill-color: transparent; */
+	line-height: 1.5;
 }
 
 .banner_wrap {
