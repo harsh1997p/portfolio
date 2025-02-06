@@ -2,7 +2,7 @@
 function Banner() {
     return (
         <>
-            <section id="home" className="banner_wrap" data-aos="fade-up" data-aos-duration="500">
+            <section id="home" className="banner_wrap" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                 <div className="shape2">
                     <img src="images/shape1.png" className="img-fluid" alt="shape" />
                 </div>

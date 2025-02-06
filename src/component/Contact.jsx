@@ -1,59 +1,20 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 function Contact() {
-
-    const [formData, setFormData] = useState({
-        fname: "",
-        lname: "",
-        email: "",
-        phone: "",
-        message: ""
-      });
-
-      
-    
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        
-        const formData = {
-          fname: document.getElementById("fname").value,
-          lname: document.getElementById("lname").value,
-          email: document.getElementById("email").value,
-          phone: document.getElementById("phone").value,
-          message: document.getElementById("exampleFormControlTextarea1").value
-        };
-      
-        try {
-          const scriptURL = "https://script.google.com/macros/s/AKfycbycHcFGb-sTcHXgkZFROtxUZkWiPMWiGKYH5xphW5ISiORoREmC0NflP_UTywGtPzhe/exec"; // Replace with your Apps Script URL
-          await axios.post(scriptURL, formData, {
-            headers: {
-              "Content-Type": "application/json"
-            }
-          });
-          alert("Form submitted successfully!");
-        } catch (error) {
-          console.error("Error submitting form:", error);
-          alert("Network error. Check console for details.");
-        }
-      };
 
 
     const social = [
         {
-            id:1,
+            id: 1,
             image: '../images/behance.png'
         },
         {
-            id:2,
+            id: 2,
             image: '../images/instagram.png'
         },
         {
-            id:3,
+            id: 3,
             image: '../images/linkedin.png'
         },
 
@@ -63,7 +24,7 @@ function Contact() {
             <section id="contact" className="contact_wrap">
 
                 <div className="container">
-                    <div className="contact_box" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200">
+                    <div className="contact_box" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200" data-aos-once="true">
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="head_title">
@@ -88,7 +49,7 @@ function Contact() {
                             </div>
 
                             <div className="col-sm-6">
-                                <form onSubmit={handleSubmit}>
+                                <form>
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <div className="form-group">

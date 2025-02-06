@@ -65,7 +65,7 @@ function Skill() {
                     <div className="row">
                         <div className="col-sm-12">
                             <div className="head_title text-center">
-                                <h3 data-aos="fade-up" data-aos-duration="500" data-aos-offset="500">What I Bring to the Table</h3>
+                                <h3 data-aos="fade-up" data-aos-duration="200" data-aos-offset="200" data-aos-once="true">What I Bring to the Table</h3>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ function Skill() {
                         {
                             skills.map((skill) =>
                                 <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                                    <div className="skillbox" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100">
+                                    <div className="skillbox" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-once="true">
                                         <div className="icon">
                                             <img src={skill.image} className="img-fluid" alt="skill" />
                                         </div>
