@@ -3,6 +3,9 @@ function Banner() {
     return (
         <>
             <section id="home" className="banner_wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div className="lineshape">
+                <img src="images/line_shape.png" className="img-fluid" alt="shape" />
+                </div>
                 <div className="shape2">
                     <img src="images/shape1.png" className="img-fluid" alt="shape" />
                 </div>
