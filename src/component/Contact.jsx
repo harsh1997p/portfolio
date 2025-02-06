@@ -24,7 +24,7 @@ function Contact() {
             <section id="contact" className="contact_wrap">
 
                 <div className="container">
-                    <div className="contact_box" data-aos="flip-left" data-aos-duration="500" data-aos-offset="200" data-aos-once="true">
+                    <div className="contact_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="head_title">

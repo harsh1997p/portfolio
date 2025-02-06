@@ -32,7 +32,7 @@ function service() {
                     <div className="row">
                         <div className="col-sm-12 text-center">
                             <div className="head_title">
-                                <h3 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-once="true">What I Offer</h3>
+                                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" data-aos-once="true">What I Offer</h3>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ function service() {
                         {
                             services.map((services) => (
                                 <div className="col-sm-12 col-md-6 col-lg-3">
-                                    <div className="service_box" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-once="true">
+                                    <div className="service_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="100" data-aos-once="true">
                                         <div className="icon">
                                             <img src={services.image} className="img-fluid" alt="icon" />
                                         </div>

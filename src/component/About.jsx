@@ -5,7 +5,7 @@ function About() {
    
     return (
         <>
-            <section id="about" className="about_wrap pt-80 pb-80" data-aos="fade-up" data-aos-duration="500" data-aos-offset="300" data-aos-once="true">
+            <section id="about" className="about_wrap pt-80 pb-80" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">

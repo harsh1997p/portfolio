@@ -1,7 +1,7 @@
 function Experience() {
     return (
         <>
-            <section className="experience_wrap pt-80" data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-once="true">
+            <section className="experience_wrap pt-80" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" data-aos-once="true">
 
                 <div className="container">
                     <div className="row">

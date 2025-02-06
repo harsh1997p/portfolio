@@ -53,7 +53,7 @@ function Project() {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <div className="head_title text-center">
+                            <div className="head_title text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
                                 <h3>Projects</h3>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ function Project() {
                         {
                             projects.map((projects) => (
                                 <div className="col-sm-12 col-md-6 col-lg-4">
-                                    <div className="project_box" data-aos="flip-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
+                                    <div className="project_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
                                         <div className="project_img">
                                             <a type="button" onClick={handleShow}><img src={projects.image} className="img-fluid" alt="project" /></a>
                                         </div>
