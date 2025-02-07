@@ -8,7 +8,7 @@ function About() {
             <section className="marquee-text ">
                 <div className="container-fluid p-0">
                     <div className="row">
-                        <div className="col-sm-12">
+                        <div className="col-sm-12 px-0">
                             <marquee class="marq" direction="left" loop="">
                                 <div className="text_content">
                                     <div class="text">
