@@ -168,6 +168,24 @@ section{
 	
 }
 
+.text_content{
+	display: flex;
+	align-items: center;
+}
+
+.text_content .text {
+	font-size: 46px;
+	color: #fff;
+	font-weight: 500;
+	padding: 0 40px;
+}
+
+.marq {
+	background: #4202Eb;
+	padding: 20px 0;
+}
+
+
 .marquee_content {
 
 	display: flex;
