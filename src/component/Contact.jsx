@@ -34,7 +34,7 @@ function Contact() {
 
                                 </div>
                                 <h4>If you would like to work with us or just want to get in touch, we’d love to hear from you!</h4>
-                                <h3><a className="text-white" href="">test@gmail.com</a></h3>
+                                <h3><a className="text-white" href="">harshprajapati212@gmail.com</a></h3>
                                 <div className="social_list mt-3">
                                     <ul className="list-unstyled list-inline">
                                         {
