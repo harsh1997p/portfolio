@@ -37,7 +37,7 @@ function Banner() {
 
                         <div className="col-sm-6">
                             <div className="banner_info">
-                            <h1>Hello, I am <span>Mark111</span></h1>
+                            <h1>Hello, I am <span>Mark</span></h1>
                                 <h2>UI/UX Designer and
                                     Frontend Developer</h2>
                                 <p>I have been working, i am proficient in ui design, user experience, researcher, web development.</p>
