@@ -1,7 +1,31 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 
 function Contact() {
+    const [formData, setFormData] = useState({
+        fname: '',
+        lname: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    // Handle input changes
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:5000/submit-form', formData);
+            alert(response.data.message);
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form');
+        }
+    };
 
 
     const social = [
@@ -49,44 +73,43 @@ function Contact() {
                             </div>
 
                             <div className="col-sm-6">
-                                <form>
-                                    <div className="row">
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="fname" placeholder="First Name" />
-                                            </div>
-                                        </div>
+                            <form onSubmit={handleSubmit}>
+            <div className="row">
+                <div className="col-sm-6">
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="fname" value={formData.fname} onChange={handleChange} placeholder="First Name" />
+                    </div>
+                </div>
 
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="lname" placeholder="Last Name" />
-                                            </div>
-                                        </div>
+                <div className="col-sm-6">
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="lname" value={formData.lname} onChange={handleChange} placeholder="Last Name" />
+                    </div>
+                </div>
 
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="email" placeholder="Email" />
-                                            </div>
-                                        </div>
+                <div className="col-sm-6">
+                    <div className="form-group">
+                        <input type="email" className="form-control" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
+                    </div>
+                </div>
 
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="phone" placeholder="Phone" />
-                                            </div>
-                                        </div>
+                <div className="col-sm-6">
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" />
+                    </div>
+                </div>
 
-                                        <div className="col-sm-12">
-                                            <div className="form-group">
-                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"
-                                                    placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
+                <div className="col-sm-12">
+                    <div className="form-group">
+                        <textarea className="form-control" name="message" value={formData.message} onChange={handleChange} rows="5" placeholder="Message"></textarea>
+                    </div>
+                </div>
 
-                                        <div className="col-sm-12">
-                                            <button type="submit" className="btn btn-light">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
+                <div className="col-sm-12">
+                    <button type="submit" className="btn btn-light">Submit</button>
+                </div>
+            </div>
+        </form>
 
                             </div>
                         </div>
