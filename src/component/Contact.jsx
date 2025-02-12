@@ -178,7 +178,7 @@ function Contact() {
                       ></textarea>
                     </div>
                     <div className="col-sm-12 mt-3">
-                      <button type="submit" className="btn btn-primary">
+                      <button type="submit" className="btn btn-light">
                         Submit
                       </button>
                     </div>
