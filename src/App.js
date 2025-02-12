@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 
 
 function App() {
+  
   useEffect(() => {
     AOS.init();
   }, [])
