@@ -1,208 +1,211 @@
 import React, { useState } from "react";
 // import axios from "axios";
+import emailjs from "emailjs-com";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-    const [formData, setFormData] = useState({
-        fname: '',
-        lname: '',
-        email: '',
-        phone: '',
-        message: '',
-    });
-    const [statusMessage, setStatusMessage] = useState('');
-    const [isSuccess, setIsSuccess] = useState(null);
+  const [statusMessage, setStatusMessage] = useState({ message: "", type: "" });
 
-    const handleChange = (e) => {
-        const { id, value } = e.target;
-        setFormData({
-            ...formData,
-            [id]: value,
-        });
-    };
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-        // Check if all fields are filled
-        if (!formData.fname || !formData.lname || !formData.email || !formData.phone || !formData.message) {
-            setIsSuccess(false);
-            setStatusMessage('All fields are required!');
-            return; // Prevent submission if fields are empty
-        }
+    const googleSheetURL =
+      "https://script.google.com/macros/s/AKfycbwRU5CLC5Rtf1LV9hXn6QL_7bmPrf2EU2C-oL-X2nwW95OMSOXMKl8dY2jUk0I4QrVj/exec"; // Replace with your actual Google Apps Script URL
 
-        const data = new FormData();
-        data.append('fname', formData.fname);
-        data.append('lname', formData.lname);
-        data.append('email', formData.email);
-        data.append('phone', formData.phone);
-        data.append('message', formData.message);
+    try {
+      const response = await fetch(googleSheetURL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-        try {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbym9NFFJG4_BOsBJaB2nS8D-WFfidxy8IZl7o6l2ke0954qiofxxPXHXbfQs0Yf1zIj/exec', {
-                method: 'POST',
-                body: data,
-            });
-            const result = await response.json();
+      setStatusMessage({
+        message: "Form submitted successfully!",
+        type: "success",
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      setStatusMessage({
+        message: "Failed to submit the form. Try again!",
+        type: "error",
+      });
+    }
+  };
 
-            if (response.ok) {
-                setIsSuccess(true);
-                setStatusMessage('Form submitted successfully!');
-            } else {
-                setIsSuccess(false);
-                setStatusMessage('Failed to submit the form. Please try again.');
-            }
-        } catch (error) {
-            setIsSuccess(false);
-            setStatusMessage('An error occurred. Please try again.');
-        }
-    };
+  const sendEmail = () => {
+    emailjs
+      .send(
+        "service_t6n17ke", // Replace with your Service ID
+        "template_vbt03rm", // Replace with your Template ID
+        formData,
+        "fZpEy2T57ypb0Bq_z" // Replace with your User ID
+      )
+      .then(() => {
+        console.log("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+      });
+  };
 
+  const social = [
+    {
+      id: 1,
+      image: "../images/behance.png",
+    },
+    {
+      id: 2,
+      image: "../images/instagram.png",
+    },
+    {
+      id: 3,
+      image: "../images/linkedin.png",
+    },
+  ];
+  return (
+    <>
+      <section id="contact" className="contact_wrap">
+        <div className="container">
+          <div
+            className="contact_box"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-once="true"
+          >
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="head_title">
+                  <h3 className="mb-2">Let’s Talk About Your Projects!</h3>
+                </div>
+                <h4>
+                  If you would like to work with us or just want to get in
+                  touch, we’d love to hear from you!
+                </h4>
+                <h3>
+                  <a
+                    className="text-white"
+                    href="mailto:harshprajapati212@gmail.com"
+                  >
+                    harshprajapati212@gmail.com
+                  </a>
+                </h3>
+                <div className="social_list mt-3">
+                  <ul className="list-unstyled list-inline">
+                    {social.map((sociallist) => (
+                      <li className="list-inline-item">
+                        <a href="">
+                          <img
+                            src={sociallist.image}
+                            className="img-fluid"
+                            alt="behance"
+                          />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
 
-
-    const social = [
-        {
-            id: 1,
-            image: '../images/behance.png'
-        },
-        {
-            id: 2,
-            image: '../images/instagram.png'
-        },
-        {
-            id: 3,
-            image: '../images/linkedin.png'
-        },
-
-    ]
-    return (
-        <>
-            <section id="contact" className="contact_wrap">
-
-                <div className="container">
-                    <div className="contact_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="head_title">
-                                    <h3 className="mb-2">Let’s Talk About
-                                        Your Projects!</h3>
-
-
-                                </div>
-                                <h4>If you would like to work with us or just want to get in touch, we’d love to hear from you!</h4>
-                                <h3><a className="text-white" href="mailto:harshprajapati212@gmail.com">harshprajapati212@gmail.com</a></h3>
-                                <div className="social_list mt-3">
-                                    <ul className="list-unstyled list-inline">
-                                        {
-                                            social.map((sociallist) => (
-                                                <li className="list-inline-item"><a href=""><img src={sociallist.image} className="img-fluid"
-                                                    alt="behance" /></a>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="col-sm-6">
-                                <form onSubmit={handleSubmit}>
-                                    <div className="row">
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="fname"
-                                                    placeholder="First Name"
-                                                    value={formData.fname}
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="lname"
-                                                    placeholder="Last Name"
-                                                    value={formData.lname}
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="email"
-                                                    placeholder="Email"
-                                                    value={formData.email}
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="phone"
-                                                    placeholder="Phone"
-                                                    value={formData.phone}
-                                                    onChange={handleChange}
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-12">
-                                            <div className="form-group">
-                                                <textarea
-                                                    className="form-control"
-                                                    id="message"
-                                                    rows="5"
-                                                    placeholder="Message"
-                                                    value={formData.message}
-                                                    onChange={handleChange}
-                                                ></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-12">
-                                            <button type="submit" className="btn btn-light">
-                                                Submit
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                {statusMessage && (
-                                    <div
-                                        style={{
-                                            marginTop: '20px',
-                                            padding: '10px',
-                                            color: 'white',
-                                            backgroundColor: isSuccess ? 'green' : 'red',
-                                        }}
-                                    >
-                                        {statusMessage}
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+              <div className="col-sm-6">
+                <form onSubmit={handleSubmit}>
+                  <div className="row">
+                    <div className="col-sm-6">
+                      <input
+                        type="text"
+                        name="firstName"
+                        className="form-control"
+                        placeholder="First Name"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
+                    <div className="col-sm-6">
+                      <input
+                        type="text"
+                        name="lastName"
+                        className="form-control"
+                        placeholder="Last Name"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="col-sm-12">
+                      <textarea
+                        name="message"
+                        className="form-control"
+                        rows="5"
+                        placeholder="Message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      ></textarea>
+                    </div>
+                    <div className="col-sm-12 mt-3">
+                      <button type="submit" className="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
 
-                </div>
-                <div className="shape">
-                    <img src="images/shape8.png" className="img-fluid" alt="shape" />
-                </div>
-            </section>
-        </>
-    )
+                {statusMessage.message && (
+                  <div
+                    className={`mt-3 p-2 text-center ${
+                      statusMessage.type === "success"
+                        ? "bg-success text-white"
+                        : "bg-danger text-white"
+                    }`}
+                  >
+                    {statusMessage.message}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="shape">
+          <img src="images/shape8.png" className="img-fluid" alt="shape" />
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default Contact;
