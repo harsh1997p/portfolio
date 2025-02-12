@@ -2,6 +2,19 @@
     html {
         overflow-x: hidden;
     }
+    .banner_info {
+        text-align: center;
+    }
+    section {
+        /* scroll-margin-top: 100px; */
+        padding-bottom:0;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    .workbox .right {
+        text-align: left;
+    }
     .banner_wrap .shape2,
     .banner_wrap .shape3,
     .banner_wrap .shape4,
@@ -17,7 +30,7 @@
     }
 
     .banner_wrap{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     .banner_wrap .shape1 {
         width: 390px;
