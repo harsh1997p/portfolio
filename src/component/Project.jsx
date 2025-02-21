@@ -2,45 +2,69 @@ import React from 'react';
 import Modal from './Modal';
 import { useState } from 'react';
 
+
 function Project() {
     const projects = [
         {
             id: 1,
-            title: "Visionary Architec Portfolio",
+            title: "Hotel Booking App",
             tag1: "WEBSITE",
-            tag2: "UIUX",
-            image: "../images/p1.png",
-
+            tag2: "APP",
+            image: "../images/Hotel-Booking.png",
+            link:"https://www.behance.net/gallery/188043731/Hotel-Booking-App"
         },
         {
             id: 2,
-            title: "Healthcare Portfolio",
-            tag1: "WEBSITE",
-            tag2: "UIUX",
-            image: "../images/p2.png",
+            title: "Food Delivery App",
+            tag1: "APP",
+            image: "../images/FoodDelivery.png",
+            link:"https://www.behance.net/gallery/196974201/Food-Delivery-App"
 
         }
         ,
         {
             id: 3,
-            title: "Finance Portfolio",
+            title: "News Website",
             tag1: "WEBSITE",
-            tag2: "UIUX",
-            image: "../images/p3.png",
+            image: "../images/News-Website.png",
+            link:"https://www.behance.net/gallery/210502495/Journal-Of-Supply-Chain-Media-Website"
+        },
+        {
+            id: 4,
+            title: "Petroleum Company Website",
+            tag1: "WEBSITE",
+            image: "../images/Petroleum-Company.png",
+            link:"https://www.behance.net/gallery/212860079/Petroleum-Company-Website"
+
+        },
+        {
+            id: 5,
+            title: "HRMS",
+            tag1: "APP",
+            image: "../images/HRMS.png",
+            link:"https://www.behance.net/gallery/196750573/HRMS-App"
+        }
+        ,
+        {
+            id: 5,
+            title: "Go Kamp",
+            tag1: "WEBSITE",
+            image: "../images/Gokamp.png",
+            link:"https://www.behance.net/gallery/188425617/Camping-website"
 
         }
     ]
 
     const Modaldata = [
         {
-            id:1,
-            title:"Modal1",
-            desc:"This is the modal body content."
+            id: 1,
+            title: "Modal1",
+            desc: "This is the modal body content."
         },
         {
-            id:2,
-            title:"Modal2",
-            desc:"This is the modal body content2."
+            id: 2,
+            title: "Modal2",
+            desc: "This is the modal body content2."
         }
     ]
     const [showModal, setShowModal] = useState(false);
@@ -62,20 +86,22 @@ function Project() {
                     <div className="row">
                         {
                             projects.map((projects) => (
-                                <div className="col-sm-12 col-md-6 col-lg-4">
-                                    <div className="project_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
-                                        <div className="project_img">
-                                            <a type="button" onClick={handleShow}><img src={projects.image} className="img-fluid" alt="project" /></a>
-                                        </div>
-
-                                        <div className="info">
-                                            <div className="tags">
-                                                <span>{projects.tag1}</span><span>{projects.tag2}</span>
+                               
+                                    <div className="col-sm-12 col-md-6 col-lg-4">
+                                        <div className="project_box" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
+                                            <div className="project_img">
+                                                <a type="button" href={projects.link}><img src={projects.image} className="img-fluid" alt="project" /></a>
                                             </div>
-                                            <h4><a className="text-white" href="">{projects.title}</a></h4>
+
+                                            <div className="info">
+                                                <div className="tags">
+                                                    <span>{projects.tag1}</span>
+                                                </div>
+                                                <h4><a className="text-white" href={projects.link}>{projects.title}</a></h4>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                
                             )
                             )
                         }
