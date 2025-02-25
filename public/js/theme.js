@@ -170,7 +170,14 @@ if ($('.text-anime-style-3').length) {
 
 
 
-
+$('.marquee-with-options').marquee({
+	speed: 5000,
+	gap: 50,
+	delayBeforeStart: 0,
+	direction: 'left',
+	duplicated: true,
+	pauseOnHover: true
+});
 
   
 })(jQuery);

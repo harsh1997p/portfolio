@@ -20,19 +20,15 @@ function Banner() {
                 <div className="lineshape">
                     <img src="images/line_shape.png" className="img-fluid" alt="shape" />
                 </div>
-                <div className="shape2">
-                    <img src="images/shape1.png" className="img-fluid" alt="shape" />
-                </div>
-
                 <div className="shape4">
                     <img src="images/shape3.png" className="img-fluid" alt="shape" />
                 </div>
                 <div className="shape5">
                     <img src="images/shape4.png" className="img-fluid" alt="shape" />
                 </div>
-                <div className="shape6">
+                {/* <div className="shape6">
                     <img src="images/shape5.png" className="img-fluid" alt="shape" />
-                </div>
+                </div> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 text-center">
@@ -43,13 +39,10 @@ function Banner() {
                     </div>
 
                     <div className="row align-items-center py-4">
-                        <div className="col-sm-6 text-center">
+                        <div className="col-sm-12 text-center">
                             <div className="banner_img">
                                 <img src="images/banner_img.png" className="img-fluid" alt="banner" />
                             </div>
-                        </div>
-
-                        <div className="col-sm-6">
                             <div className="banner_info">
                                 <h1 className="text-anime-style-2">Hello, I am <span>Harsh</span></h1>
                                 <h2>UI/UX Designer and
@@ -60,6 +53,10 @@ function Banner() {
                                 </button>
                                 {/* <a href="" >Download CV <img src="images/download.svg" alt="download" /></a> */}
                             </div>
+                        </div>
+
+                        <div className="col-sm-12">
+                            
                         </div>
                     </div>
                 </div>

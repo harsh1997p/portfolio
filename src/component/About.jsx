@@ -5,7 +5,7 @@ function About() {
 
     return (
         <>
-            {/* <section className="marquee-text ">
+            <section className="marquee-text ">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 px-0">
@@ -47,7 +47,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section> 
 
             <section id="about" className="about_wrap pt-80 pb-80" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true">
                 <div className="container">
