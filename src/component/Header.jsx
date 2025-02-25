@@ -8,7 +8,7 @@ function Header() {
                         <a className="navbar-brand" href="#"><img src="images/logo.png" className="img-fluid" alt="logo" /></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i className="fa fa-bars"></i>
+                           <img src="../images/bars.png" alt="bar" />
                         </button>
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
