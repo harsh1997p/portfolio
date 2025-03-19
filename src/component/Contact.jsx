@@ -64,14 +64,17 @@ function Contact() {
     {
       id: 1,
       image: "../images/behance.png",
+      link:"https://www.behance.net/harshprajapati28"
     },
     {
       id: 2,
       image: "../images/instagram.png",
+      link:"https://www.instagram.com/harsh__prajapati21?igsh=MWRzeXpjMWk1bzNjYg%3D%3D&utm_source=qr"
     },
     {
       id: 3,
       image: "../images/linkedin.png",
+      link:"https://www.linkedin.com/in/harsh-prajapati-baa739132/"
     },
   ];
   return (
@@ -106,7 +109,7 @@ function Contact() {
                   <ul className="list-unstyled list-inline">
                     {social.map((sociallist) => (
                       <li className="list-inline-item">
-                        <a href="">
+                        <a href={sociallist.link}>
                           <img
                             src={sociallist.image}
                             className="img-fluid"
