@@ -1,8 +1,4 @@
-
-
-
 function About() {
-
     return (
         <>
             <section className="marquee-text ">
@@ -15,31 +11,31 @@ function About() {
                                         Web Design
                                     </div>
                                     <div className="icon">
-                                        <img src="../images/star.png" alt="icon" />
+                                        <img src="images/Star.png" alt="icon" />
                                     </div>
                                     <div class="text">
                                         App Design
                                     </div>
                                     <div className="icon">
-                                        <img src="../images/star.png" alt="icon" />
+                                        <img src="images/Star.png" alt="icon" />
                                     </div>
                                     <div class="text">
                                         Branding
                                     </div>
                                     <div className="icon">
-                                        <img src="../images/star.png" alt="icon" />
+                                        <img src="images/Star.png" alt="icon" />
                                     </div>
                                     <div class="text">
                                         Logo Design
                                     </div>
                                     <div className="icon">
-                                        <img src="../images/star.png" alt="icon" />
+                                        <img src="images/Star.png" alt="icon" />
                                     </div>
                                     <div class="text">
                                         Frontend Development
                                     </div>
                                     <div className="icon">
-                                        <img src="../images/star.png" alt="icon" />
+                                        <img src="images/Star.png" alt="icon" />
                                     </div>
                                 </div>
 
@@ -47,7 +43,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
 
             <section id="about" className="about_wrap pt-80 pb-80" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true">
                 <div className="container">
