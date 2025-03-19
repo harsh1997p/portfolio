@@ -41,7 +41,7 @@ function Banner() {
                     <div className="row align-items-center py-4">
                         <div className="col-sm-12 text-center">
                             <div className="banner_img">
-                                <img src="images/banner_img.jpg" className="img-fluid" alt="banner" />
+                                <img src="images/banner_img.png" className="img-fluid" alt="banner" />
                             </div>
                             <div className="banner_info">
                                 <h1 className="text-anime-style-2">Hello, I am <span>Harsh</span></h1>
