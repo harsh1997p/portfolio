@@ -7,7 +7,7 @@ function Banner() {
         // Create an anchor element and trigger the download
         const link = document.createElement("a");
         link.href = pdfPath;
-        link.download = "resume-latest.pdf"; // Rename the file on download
+        link.download = "Resume_Resume 2_merged.pdf"; // Rename the file on download
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
