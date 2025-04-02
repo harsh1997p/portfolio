@@ -82,6 +82,13 @@ function Project() {
             image: "../images/incorporation.png",
             link: "https://www.behance.net/gallery/193456033/Incorporation-Service"
         },
+        {
+            id: 10,
+            title: "Parjax - Window Arrangement Tehnology",
+            tag1: "APP",
+            image: "../images/parjax.png",
+            link: "https://www.behance.net/gallery/222774679/Parjax-Window-Arrangement-Technology"
+        },
     ]
 
     const Modaldata = [
