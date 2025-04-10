@@ -172,7 +172,9 @@ section{
 	padding: 15px 0;
 }
 
-
+.text_content .icon img {
+	width: 30px;
+}
 .marquee_content {
 
 	display: flex;
