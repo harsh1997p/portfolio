@@ -412,34 +412,3 @@ section{
 	backface-visibility: hidden;
 	transform-style: preserve-3d;
   }
-
-  .marquee-container {
-      width: 100%;
-      overflow: hidden;
-      background: #000;
-      color: #fff;
-      white-space: nowrap;
-      box-sizing: border-box;
-    }
-
-    .marquee-content {
-      display: inline-block;
-      animation: marquee 15s linear infinite;
-    }
-
-    .marquee-content span {
-      display: inline-block;
-      margin-right: 50px;
-      font-size: 1.2rem;
-    }
-
-    .marquee-track {
-      display: inline-block;
-      white-space: nowrap;
-      will-change: transform;
-    }
-
-    @keyframes marquee {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
