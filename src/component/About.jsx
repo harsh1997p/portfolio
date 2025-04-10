@@ -37,6 +37,36 @@ function About() {
                                     <div className="icon">
                                         <img src="images/Star.png" alt="icon" />
                                     </div>
+                                     <div class="text">
+                                        Web Design
+                                    </div>
+                                    <div className="icon">
+                                        <img src="images/Star.png" alt="icon" />
+                                    </div>
+                                    <div class="text">
+                                        App Design
+                                    </div>
+                                    <div className="icon">
+                                        <img src="images/Star.png" alt="icon" />
+                                    </div>
+                                    <div class="text">
+                                        Branding
+                                    </div>
+                                    <div className="icon">
+                                        <img src="images/Star.png" alt="icon" />
+                                    </div>
+                                    <div class="text">
+                                        Logo Design
+                                    </div>
+                                    <div className="icon">
+                                        <img src="images/Star.png" alt="icon" />
+                                    </div>
+                                    <div class="text">
+                                        Frontend Development
+                                    </div>
+                                    <div className="icon">
+                                        <img src="images/Star.png" alt="icon" />
+                                    </div>
                                 </div>
 
                             </marquee>
