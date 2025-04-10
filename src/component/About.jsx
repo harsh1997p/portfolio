@@ -1,6 +1,28 @@
 function About() {
     return (
         <>
+            <section>
+                <div class="container">
+                    <div class="marquee-container">
+                        <div class="marquee-content marquee-track">
+                          <!-- Repeated content for seamless scroll -->
+                          <span>🌟 Web Design</span>
+                          <span>💼 Freelance Projects</span>
+                          <span>🚀 UI/UX Case Studies</span>
+                          <span>📱 App Design</span>
+                          <span>🖥️ Front-End Dev</span>
+                          <span>🎨 Branding</span>
+                    
+                          <span>🌟 Web Design</span>
+                          <span>💼 Freelance Projects</span>
+                          <span>🚀 UI/UX Case Studies</span>
+                          <span>📱 App Design</span>
+                          <span>🖥️ Front-End Dev</span>
+                          <span>🎨 Branding</span>
+                        </div>
+                      </div>
+                </div>
+            <section/>
             <section className="marquee-text ">
                 <div className="container-fluid">
                     <div className="row">
