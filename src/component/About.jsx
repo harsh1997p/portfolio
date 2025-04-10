@@ -1,101 +1,144 @@
 function About() {
     return (
         <>
-            <section>
-                <div class="container">
-                    <div class="marquee-container">
-                        <div class="marquee-content marquee-track">
-                          <!-- Repeated content for seamless scroll -->
-                          <span>🌟 Web Design</span>
-                          <span>💼 Freelance Projects</span>
-                          <span>🚀 UI/UX Case Studies</span>
-                          <span>📱 App Design</span>
-                          <span>🖥️ Front-End Dev</span>
-                          <span>🎨 Branding</span>
-                    
-                          <span>🌟 Web Design</span>
-                          <span>💼 Freelance Projects</span>
-                          <span>🚀 UI/UX Case Studies</span>
-                          <span>📱 App Design</span>
-                          <span>🖥️ Front-End Dev</span>
-                          <span>🎨 Branding</span>
-                        </div>
-                      </div>
-                </div>
-            <section/>
+
+
             <section className="marquee-text ">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 px-0">
-                            <marquee class="marq" direction="left" loop="">
-                                <div className="text_content">
-                                    <div class="text">
-                                        Web Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        App Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Branding
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Logo Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Frontend Development
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                     <div class="text">
-                                        Web Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        App Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Branding
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Logo Design
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                    <div class="text">
-                                        Frontend Development
-                                    </div>
-                                    <div className="icon">
-                                        <img src="images/Star.png" alt="icon" />
-                                    </div>
-                                </div>
+                        <div class="marquee-container">
+                        <div class="marquee-content marquee-track">
+                            <span class="text">
+                                Web Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                App Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Branding
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Logo Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Frontend Development
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Web Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                App Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Branding
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Logo Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Frontend Development
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
 
-                            </marquee>
+                            <span class="text">
+                                Web Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                App Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Branding
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Logo Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Frontend Development
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Web Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                App Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Branding
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Logo Design
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
+                            <span class="text">
+                                Frontend Development
+                            </span>
+                            <span className="icon">
+                                <img src="images/Star.png" alt="icon" />
+                            </span>
                         </div>
                     </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </section>
+
+
 
             <section id="about" className="about_wrap pt-80 pb-80" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true">
                 <div className="container">
