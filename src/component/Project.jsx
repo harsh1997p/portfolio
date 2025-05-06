@@ -20,8 +20,7 @@ function Project() {
             image: "../images/FoodDelivery.png",
             link: "https://www.behance.net/gallery/196974201/Food-Delivery-App"
 
-        }
-        ,
+        },
         {
             id: 3,
             title: "News Website",
@@ -46,7 +45,7 @@ function Project() {
         }
         ,
         {
-            id: 5,
+            id: 6,
             title: "Go Kamp",
             tag1: "WEBSITE",
             image: "../images/Gokamp.png",
@@ -54,13 +53,7 @@ function Project() {
 
         }
        ,
-        {
-            id: 6,
-            title: "Jetrise",
-            tag1: "WEBSITE",
-            image: "../images/jetrise.jpg",
-            link: "https://www.behance.net/gallery/209909287/Jetrise-Private-Jet-Booking-Landing-Page"
-        },
+       
         {
             id: 7,
             title: "India Supply Chain Summit",
@@ -82,13 +75,44 @@ function Project() {
             image: "../images/incorporation.png",
             link: "https://www.behance.net/gallery/193456033/Incorporation-Service"
         },
+
         {
             id: 10,
-            title: "Parjax - Window Arrangement Tehnology",
+            title: "Calculator App",
             tag1: "APP",
-            image: "../images/parjax.png",
-            link: "https://www.behance.net/gallery/222774679/Parjax-Window-Arrangement-Technology"
+            image: "../images/calculator.png",
+            link: "https://www.behance.net/gallery/225220561/Calculator-App"
         },
+        {
+            id: 11,
+            title: "Reminder App",
+            tag1: "APP",
+            image: "../images/reminder.png",
+            link: "https://www.behance.net/gallery/225222261/Reminder-App"
+        },
+        {
+            id: 12,
+            title: "Habit Tracking App",
+            tag1: "APP",
+            image: "../images/habit.jpg",
+            link: "https://www.behance.net/gallery/224542013/Habitly-Habit-Tracking-App"
+        },
+        
+        // {
+        //     id: 10,
+        //     title: "Parjax - Window Arrangement Tehnology",
+        //     tag1: "APP",
+        //     image: "../images/parjax.png",
+        //     link: "https://www.behance.net/gallery/222774679/Parjax-Window-Arrangement-Technology"
+        // },
+
+         // {
+        //     id: 6,
+        //     title: "Jetrise",
+        //     tag1: "WEBSITE",
+        //     image: "../images/jetrise.jpg",
+        //     link: "https://www.behance.net/gallery/209909287/Jetrise-Private-Jet-Booking-Landing-Page"
+        // },
     ]
 
     const Modaldata = [
