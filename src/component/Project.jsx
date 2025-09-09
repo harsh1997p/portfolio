@@ -101,7 +101,7 @@ function Project() {
             id: 13,
             title: "Healthcare CMS Website",
             tag1: "Website",
-            image: "../images/healthcare.jpg",
+            image: "../images/healthcare.png",
             link: "https://www.behance.net/gallery/233017203/Healthcare-CMS-Website"
         },
         
