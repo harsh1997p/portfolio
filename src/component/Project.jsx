@@ -104,6 +104,13 @@ function Project() {
             image: "../images/healthcare.png",
             link: "https://www.behance.net/gallery/233017203/Healthcare-CMS-Website"
         },
+          {
+            id: 14,
+            title: "Lingobar-Language Learning App",
+            tag1: "App",
+            image: "../images/language.png",
+            link: "https://www.behance.net/gallery/234391181/Language-Learning-App"
+        },
         
         // {
         //     id: 10,
